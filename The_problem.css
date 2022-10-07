@@ -1,0 +1,26 @@
+
+}
+@media only screen and (max-width: 300px) {
+    #small{
+        background-color: red;
+        display: block;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 768px){
+    #medium{
+        background-color: green;
+        display: flex;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+   #large{ 
+    background-color: blue;
+    display: inline-flex;
+   }
+}
