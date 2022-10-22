@@ -1,54 +1,70 @@
-
-}
-@media only screen and (max-width: 300px) {
-    #small{@media only screen and (max-width: 300px) {
+  /* For mobile phone */
+@media only screen and (min-width: 0px ) and (max-width:299px) {
+    body{
+        background-color: red;
+    }
+    .display{
+       display: block;
+    }
     #small{
-        background-color: red;
-        display: block-inline;
+        font-size: 8px;
     }
-    
-
-    } 
-
-
-
-@media only screen and (max-width: 768px){
     #medium{
-        background-color: green;
-        display: flex;
-        .col-1 {width: 66%;}
-        .col-2 {width: 33%;}
-        .col-3 {width: 100%;}
-
+        display: none;
+    }
+    #large{
+        display: none;
     }
 }
 
-
-@media only screen and (min-width: 768px){
-   #large{ 
-    background-color: blue;
-    display: inline-flex;
-   }
+/* For tablet */
+@media only screen and (min-width: 300px) and (max-width:768px) {
+    body{
+        background-color: green;
+    }
+    .display{
+        
+    }
+    #small{
+        display: none;
+        
+    }
+    #medium{
+       font-size: 15px;
+       width: 33%;
+    }
+    #large{
+        display: none;
+        
+    }
+    .medium-1{
+        width: 66%;
+    }
+    .medium-2{
+        width: 33%;
+    }
+    .medium-3{
+        width: 100%;
+    }
 }
-        background-color: red;
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: blue;
+    }
+    .display{
         display: block;
+        margin: auto;
+    }
+    #small{
+        display: none;
+    }
+    #medium{
+        display: none;
+    }
+    #large{
+        font-size: 25px;
     }
     
-}
-
-
-
-@media only screen and (max-width: 768px){
-    #medium{
-        background-color: green;
-        display: flex;
-    }
-}
-
-
-@media only screen and (min-width: 768px){
-   #large{ 
-    background-color: blue;
-    display: inline-flex;
-   }
 }
